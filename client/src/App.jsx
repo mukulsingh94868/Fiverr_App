@@ -1,4 +1,4 @@
-// import "./App.scss";
+import "./App.scss";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
