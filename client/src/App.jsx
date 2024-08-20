@@ -14,6 +14,8 @@ function App() {
         <Navbar />
         <Outlet />
         <Footer />
+
+        
       </div>
     );
   };
