@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Gigs from "./pages/gigs/Gigs";
+import MyGigs from "./pages/myGigs/MyGigs";
 
 function App() {
   const Layout = () => {
@@ -32,10 +33,10 @@ function App() {
           path: "/gigs",
           element: <Gigs />,
         },
-        // {
-        //   path: "/myGigs",
-        //   element: <MyGigs />,
-        // },
+        {
+          path: "/myGigs",
+          element: <MyGigs />,
+        },
         // {
         //   path: "/orders",
         //   element: <Orders />,
