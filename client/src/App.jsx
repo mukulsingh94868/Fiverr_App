@@ -9,6 +9,7 @@ import Login from "./pages/login/Login";
 import Gigs from "./pages/gigs/Gigs";
 import MyGigs from "./pages/myGigs/MyGigs";
 import Orders from "./pages/orders/Orders";
+import Messages from "./pages/messages/Messages";
 
 function App() {
   const Layout = () => {
@@ -42,10 +43,10 @@ function App() {
           path: "/orders",
           element: <Orders />,
         },
-        // {
-        //   path: "/messages",
-        //   element: <Messages />,
-        // },
+        {
+          path: "/messages",
+          element: <Messages />,
+        },
         // {
         //   path: "/message/:id",
         //   element: <Message />,
