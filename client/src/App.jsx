@@ -8,6 +8,7 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Gigs from "./pages/gigs/Gigs";
 import MyGigs from "./pages/myGigs/MyGigs";
+import Orders from "./pages/orders/Orders";
 
 function App() {
   const Layout = () => {
@@ -37,10 +38,10 @@ function App() {
           path: "/myGigs",
           element: <MyGigs />,
         },
-        // {
-        //   path: "/orders",
-        //   element: <Orders />,
-        // },
+        {
+          path: "/orders",
+          element: <Orders />,
+        },
         // {
         //   path: "/messages",
         //   element: <Messages />,
