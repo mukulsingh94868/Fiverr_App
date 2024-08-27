@@ -29,12 +29,11 @@ function Register() {
       return { ...prev, isSeller: e.target.checked };
     });
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const url = await upload(file);
-    console.log('url', url);
     try {
       await newRequest.post("/auth/register", {
         ...user,
