@@ -17,6 +17,8 @@ function Gigs() {
   const apply = () => {
     console.log(minRef.current.value);
     console.log(maxRef.current.value);
+
+    
   };
 
   return (
@@ -25,7 +27,7 @@ function Gigs() {
         <span className="breadcrumbs">Liverr</span>
         <h1>AI Artists</h1>
         <p>
-          Explore the boundaries of art and technology with Liverr's AI artists
+          Explore the boundaries of art and technology with Liverr&apos;s AI artists
         </p>
         <div className="menu">
           <div className="left">
