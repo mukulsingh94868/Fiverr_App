@@ -49,7 +49,7 @@ function Navbar() {
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img
-                src={currentUser?.img || "https://images.pexels.com/photos/1115697/pexels-photo-1115697.jpeg?auto=compress&cs=tinysrgb&w=1600"}
+                src={currentUser?.img || "/img/noavatar.jpg"}
                 alt=""
               />
               <span>{currentUser?.username}</span>
@@ -79,7 +79,7 @@ function Navbar() {
             </div>
           ) : (
             <>
-              <span>Sign in</span>
+              <Link to="/login" className="link">Sign in</Link>
               <Link className="link" to="/register">
                 <button>Join</button>
               </Link>
