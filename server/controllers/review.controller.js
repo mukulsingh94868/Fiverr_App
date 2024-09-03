@@ -1,5 +1,5 @@
 import Review from '../models/review.model.js';
-import createError from '../utils/createError';
+import createError from '../utils/createError.js';
 
 export const createReview = async (req, res) => {
     if (req.isSeller)
