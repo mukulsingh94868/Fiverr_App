@@ -1,7 +1,7 @@
 import Review from '../models/review.model.js';
 import createError from '../utils/createError.js';
 
-export const createReview = async (req, res) => {
+export const createReview = async (req, res, next) => {
     if (req.isSeller)
         return next(createError(403, "Sellers can't create a review!"));
 
@@ -11,8 +11,6 @@ export const createReview = async (req, res) => {
         desc: req.body.desc,
         star: req.body.star,
     });
-
-    
 
     try {
         const review = await Review.findOne({
@@ -38,7 +36,7 @@ export const createReview = async (req, res) => {
     }
 };
 
-export const getReviews = async (req, res) => {
+export const getReviews = async (req, res, next) => {
     try {
         const reviews = await Review.find({ gigId: req.params.gigId });
         res.status(200).send(reviews);
@@ -47,7 +45,7 @@ export const getReviews = async (req, res) => {
     }
 };
 
-export const deleteReview = async (req, res) => {
+export const deleteReview = async (req, res, next) => {
     try {
 
     } catch (error) {
