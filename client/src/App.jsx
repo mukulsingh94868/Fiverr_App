@@ -18,6 +18,7 @@ import {
   QueryClientProvider,
   useQuery,
 } from '@tanstack/react-query';
+import Pay from "./pages/pay/Pay";
 
 const queryClient = new QueryClient()
 
@@ -71,6 +72,10 @@ function App() {
         {
           path: "/gig/:id",
           element: <Gig />,
+        },
+        {
+          path: "/pay/:id",
+          element: <Pay />,
         },
       ],
     },
