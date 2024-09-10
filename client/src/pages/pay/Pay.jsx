@@ -13,6 +13,8 @@ const stripePromise = loadStripe(
 const Pay = () => {
   const [clientSecret, setClientSecret] = useState("");
 
+  
+
   const { id } = useParams();
 
   useEffect(() => {
