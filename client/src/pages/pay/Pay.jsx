@@ -29,6 +29,10 @@ const Pay = () => {
       }
     };
     makeRequest();
+
+
+
+    
   }, []);
 
   const appearance = {
